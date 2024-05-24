@@ -33,28 +33,26 @@
         <!-- Lista de tarefas -->
         <ul id="taskList"></ul>
 
-        
-        <dialog open id="editDialog">
+        <dialog id="editDialog">
           <form method="dialog">
             <input
-            type="text"
-            name="title"
-            id="title"
-            placeholder="Informe o título da tarefa"
-          />
-          <textarea
-            id="description"
-            name="description"
-            placeholder="Informe a descrição da tarefa"
-          ></textarea>
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Informe o título da tarefa"
+            />
+            <textarea
+              id="description"
+              name="description"
+              placeholder="Informe a descrição da tarefa"
+            ></textarea>
             <menu>
               <button id="edit" type="edit">Editar tarefa</button>
-              <button id="cancel" type="reset">Cancel</button>
+              <button id="cancel" type="button" onclick="cancelEditDialog()">Cancelar</button>
             </menu>
           </form>
         </dialog>
         
-    
       </main>
       <footer>&copy; 2024 Todo List</footer>
     </div>

@@ -49,5 +49,4 @@ function addTask(event) {
   function cancelEditDialog() {
     const editDialog = document.getElementById("editDialog");
     editDialog.close();
-  }
-  
+}
